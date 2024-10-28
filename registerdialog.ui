@@ -40,17 +40,33 @@
     </spacer>
    </item>
    <item>
+    <widget class="QWidget" name="widget_7" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="err_tip">
+        <property name="text">
+         <string>error-msg</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
     <widget class="QWidget" name="widget_4" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="username_label">
         <property name="text">
          <string>用户名:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_4"/>
+       <widget class="QLineEdit" name="username_edit"/>
       </item>
      </layout>
     </widget>
@@ -59,14 +75,14 @@
     <widget class="QWidget" name="widget_2" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="email_label">
         <property name="text">
          <string>邮箱:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2"/>
+       <widget class="QLineEdit" name="email_edit"/>
       </item>
      </layout>
     </widget>
@@ -75,14 +91,14 @@
     <widget class="QWidget" name="widget_3" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QLabel" name="label_3">
+       <widget class="QLabel" name="password_label">
         <property name="text">
          <string>密码:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_3">
+       <widget class="QLineEdit" name="password_edit">
         <property name="text">
          <string/>
         </property>
@@ -95,14 +111,14 @@
     <widget class="QWidget" name="widget_5" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout_5">
       <item>
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="confirm_label">
         <property name="text">
          <string>确定:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_5"/>
+       <widget class="QLineEdit" name="confirm_edit"/>
       </item>
      </layout>
     </widget>
@@ -111,17 +127,17 @@
     <widget class="QWidget" name="widget_6" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout_6">
       <item>
-       <widget class="QLabel" name="label_6">
+       <widget class="QLabel" name="varify_label">
         <property name="text">
          <string>验证码:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_6"/>
+       <widget class="QLineEdit" name="varify_edit"/>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="get_code">
         <property name="text">
          <string>获取</string>
         </property>

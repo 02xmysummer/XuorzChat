@@ -7,11 +7,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 {
     setWindowIcon(QIcon(":/res/icon.ico"));
     ui->setupUi(this);
-    _login_dlg = new LoginDialog();
+    _login_dlg = new LoginDialog(this);
     setCentralWidget(_login_dlg);
     _login_dlg->show();
     connect(_login_dlg, &LoginDialog::switchRegister, this, &MainWindow::SlotSwitchReg);
-    _reg_dlg = new RegisterDialog();
+    _reg_dlg = new RegisterDialog(this);
+    _reg_dlg->hide();
+    _login_dlg->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
+    _reg_dlg->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
 }
 
 MainWindow::~MainWindow()

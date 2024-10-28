@@ -21,11 +21,13 @@ qt_add_executable(
   registerdialog.h
   registerdialog.cpp
   registerdialog.ui
-  re.qrc)
+  re.qrc
+  global.h
+  global.cpp
+)
 
 target_compile_features(XuorzChat PRIVATE cxx_std_20)
-
-target_link_libraries(XuorzChat PRIVATE Qt6::Widgets)
+target_link_libraries(XuorzChat PRIVATE Qt6::Widgets jsoncpp)
 
 set_target_properties(
   XuorzChat

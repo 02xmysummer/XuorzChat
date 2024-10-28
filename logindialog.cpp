@@ -3,10 +3,9 @@
 
 LoginDialog::LoginDialog(QWidget *parent) : QDialog(parent), ui(new Ui::LoginDialog)
 {
-    setWindowIcon(QIcon(":/res/icon.png"));
-
     ui->setupUi(this);
     connect(ui->reg_btn, &QPushButton::clicked, this, &LoginDialog::switchRegister);
+    ui->password_edit->setEchoMode(QLineEdit::Password);
 }
 
 LoginDialog::~LoginDialog()
